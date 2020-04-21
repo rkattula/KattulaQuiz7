@@ -12,6 +12,9 @@
   <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
    integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
    crossorigin=""></script>
+	
+  <script src = "./Quiz7tiledata/RaleighRailroads.geojson"></script>
+	
   <style type="text/css">
     body {
        margin: 0;
@@ -93,6 +96,8 @@
       }
 
       L.control.layers(daTiles, daMarkers).addTo(map);
+	  
+      L.geoJSON(railroads).addTo(map);
   </script>
 </body>
 </html>
